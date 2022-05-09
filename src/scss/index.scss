@@ -1,0 +1,63 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'cdn.scss';
+@import 'fonts.scss';
+@import '/src/scss/content_scss/header.scss';
+@import '/src/scss/content_scss/features.scss';
+@import '/src/scss/content_scss/work.scss';
+@import '/src/scss/content_scss/team.scss';
+@import '/src/scss/content_scss/testimonials.scss';
+@import '/src/scss/content_scss/download.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.conteiner {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.wrap{
+    display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    @include button;
+    
+    &-text {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 900;
+      font-size: $_24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255);
+      text-shadow: 1px black;
+    }
+    &:hover {
+      background: rgba(231, 20, 20);
+    }
+    &:active {
+      background: $red_btn;
+      box-shadow: 4px 4px $_30px rgba(255, 67, 67);
+    }
+  }

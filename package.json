@@ -1,0 +1,27 @@
+{
+  "name": "project_goncharova-anna_fe29-onl",
+  "version": "1.0.0",
+  "description": "Project_TMS_front",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annasuper/Project_Goncharova-Anna_FE29-onl.git"
+  },
+  "author": "Anna Goncharova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annasuper/Project_Goncharova-Anna_FE29-onl/issues"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}

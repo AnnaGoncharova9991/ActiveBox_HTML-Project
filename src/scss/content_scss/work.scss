@@ -1,0 +1,63 @@
+.work {
+  width: 100%;
+  
+}
+.project_1 {
+  display: inline-block;
+  justify-content: flex-start;
+  width: 370px;
+  height: 340px;
+  align-items: center;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255);
+  background-image: url("/src/img/work_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+
+}
+
+.project_1:hover::before{
+    content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(255, 67, 67, 0.8);
+}
+
+.project_1_description a{
+    color: black;
+
+}
+
+// .project_1:hover::before {
+//    content: 'Project Name';
+//    display: block;
+//    color: rgba(255, 255, 255);
+//     font-family: "Raleway";
+//     font-style: normal;
+//     font-weight: 900;
+//     font-size: $_24px;
+//     line-height: 1.75rem;
+//     text-align: center;
+//     text-transform: uppercase;
+//     margin-top: 6.875rem;
+//     margin-bottom: 1.25rem;
+//   }
+// .project_1:hover::after {
+//     content: 'User Interface Design';
+//     display: block;
+//     color: rgba(255, 255, 255);
+//     text-align: center;
+//     font-family: "Raleway";
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: $_18px;
+//     line-height: 1.3125rem;
+    
+//    }

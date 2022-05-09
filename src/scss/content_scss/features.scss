@@ -1,0 +1,38 @@
+.features {
+  padding: $_114px 0;
+}
+.card__features {
+  width: 360px;
+  margin: 0 15px 89px;
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-bottom: 0px;
+  }
+}
+.card_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: $_24px;
+  line-height: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(45, 48, 51);
+}
+.description {
+  text-align: center;
+  & p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    color: rgba(108, 114, 121);
+  }
+}
