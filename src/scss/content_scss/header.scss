@@ -26,45 +26,89 @@
 .header-navigation {
   display: flex;
   justify-content: space-between;
- }
-
-.logo {
-  color: $white;
-  font-size: 32px;
-  &::before {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin-bottom: 120px;
+  &::after {
     content: "";
-    width: 120.44px;
-    height: 25.75px;
-    display: inline-block;
-    background-image: url(../img/ACTIVEBOX.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: middle;
+    display: block;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: rgba(186, 187, 197);
+    position: absolute;
+    top: 150%;
+    left: 0;
   }
 }
 
-.navigation-list {
-  width: 670px;
+.logo {
   display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
+  align-items: center;
+  &::after {
+    content: "BOX";
+    display: inline-block;
+    color: $white;
+    font-size: 33px;
+  }
+  & img {
+    width: 120.44px;
+    height: 25.75px;
+  }
+}
 
-  &-item {
-    & a {
-      color: $white;
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $_13px;
-      line-height: 15px;
-      text-transform: uppercase;
+.navigation {
+  display: flex;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      vertical-align: middle;
+      width: 134px;
+      position: relative;
+
+      &:hover::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.25rem;
+        background-color: rgba(186, 187, 197);;
+        top: 200%;
+        left: 0;
+        position: absolute;
+      }
+
+      &:active::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.25rem;
+        background-color: rgba(231, 20, 20);
+        top: 200%;
+        left: 0;
+        position: absolute;
+      }
+     
+      & a {
+        color: $white;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: $_13px;
+        text-transform: uppercase;
+        &:active{
+          color: rgba(231, 20, 20);
+        }
+      }
     }
   }
 }
 .header-content {
   text-align: center;
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
 .main-title {
   margin: 0 auto $_30px auto;
@@ -75,17 +119,7 @@
   font-size: $_64px;
   line-height: 75px;
   color: rgba(255, 255, 255);
-  &::before{
-    content: "";
-    display: block;
-    width: 1170px;
-    height: 2px;
-    background-color: rgba(186, 187, 197);
-    margin: auto;
-    margin-bottom: 123px;
-    
-  }
-}
+ }
 .header-text {
   margin-bottom: 82px;
   & p {
@@ -97,4 +131,3 @@
     color: rgba(255, 255, 255);
   }
 }
-
