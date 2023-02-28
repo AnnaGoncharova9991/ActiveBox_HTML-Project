@@ -18,10 +18,13 @@
     "url": "https://github.com/Annasuper/Project_Goncharova-Anna_FE29-onl/issues"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "parcel": "^2.5.0"
-  },
-  "dependencies": {
+    "@parcel/transformer-sass": "latest",
+    "parcel": "latest",
     "sass": "^1.51.0"
+  },
+  "alias": {
+    "jquery": {
+      "global": "$"
+    }
   }
 }
